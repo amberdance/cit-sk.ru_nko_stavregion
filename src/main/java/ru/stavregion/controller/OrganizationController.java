@@ -1,5 +1,6 @@
 package ru.stavregion.controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -28,7 +29,7 @@ public class OrganizationController {
     }
 
     @PostMapping
-    public Organization createOrganization(@RequestBody Organization organization) {
+    public Organization createOrganization(@Valid @RequestBody Organization organization) {
         return organizationService.saveOrganization(organization);
     }
 

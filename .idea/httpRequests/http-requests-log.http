@@ -1,0 +1,670 @@
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T152652.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 246
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T152650.200.json
+
+###
+
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T152646.200.json
+
+###
+
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T152601.500.json
+
+###
+
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T152541.500.json
+
+###
+
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T152514.500.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 158
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": null,
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T152438.400.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 158
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": null,
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T152238.500.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 157
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": 123,
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T152234.400.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 246
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T152228.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 246
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T152110.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 158
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": null,
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T152032.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 156
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": null,
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": null,
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T152003.400.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 244
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": null,
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T151915.400.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 246
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "name",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T144332.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 242
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": null,
+  "address": "address",
+  "ogrn": null,
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T144318.400.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 242
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": null,
+  "address": "address",
+  "ogrn": null,
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T144151.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 242
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": null,
+  "address": "address",
+  "ogrn": null,
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T144132.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 242
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": null,
+  "address": "address",
+  "ogrn": null,
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T143933.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 244
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": null,
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T143905.200.json
+
+###
+
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T143646.200.json
+
+###
+
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T142834.200.json
+
+###
+
+DELETE http://localhost:9000/api/v1/organizations/7
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T142254.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Type: application/json
+Content-Length: 246
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "ogrn",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name": "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T142250.200.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Length: 247
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "name",
+  "address": "address",
+  "ogrn": "ogrn",
+  "inn": "inn",
+  "okvd": "okvd",
+  "supportForm": {
+    "name" : "name",
+    "target": "target",
+    "period": "period",
+    "size": "size"
+  },
+  "violationInformation": "violation"
+}
+
+<> 2023-07-21T142151.415.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T142017.400.json
+
+###
+
+DELETE http://localhost:9000/api/v1/organizations/1
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+DELETE http://localhost:9000/api/v1/organizations/1
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Length: 25
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+id=99&content=new-element
+
+<> 2023-07-21T141936.415.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Content-Length: 15
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"name":"test"}
+
+<> 2023-07-21T141856.415.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Length: 15
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{"name":"test"}
+
+<> 2023-07-21T141850.415.json
+
+###
+
+POST http://localhost:9000/api/v1/organizations
+Accept: application/json
+Content-Length: 13
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{name:"test"}
+
+<> 2023-07-21T141805.415.json
+
+###
+
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T120553.200.json
+
+###
+
+GET http://localhost:9000/api/v1/organizations
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T120127.200.json
+
+###
+
+GET http://localhost:9000/api/v1/organizations/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T120114.404.json
+
+###
+
+GET http://localhost:9000/v1/organizations/
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T120108.404.json
+
+###
+
+GET http://localhost:9000/organizations/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T115854.404.json
+
+###
+
+GET http://localhost:9000/organizations
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T115849.404.json
+
+###
+
+GET http://localhost:9000/organizations
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T115832.404.json
+
+###

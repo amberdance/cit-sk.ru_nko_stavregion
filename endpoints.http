@@ -3,7 +3,7 @@ Accept: application/json
 
 ###
 
-DELETE http://localhost:9000/api/v1/organizations/7
+DELETE http://localhost:9000/api/v1/organizations
 Accept: application/json
 
 ###
@@ -14,7 +14,7 @@ Content-Type: application/json
 {
   "name": "name",
   "address": "address",
-  "ogrn": "ogrn",
+  "ogrn": "name",
   "inn": "inn",
   "okvd": "okvd",
   "supportForm": {

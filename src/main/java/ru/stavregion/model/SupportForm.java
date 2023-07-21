@@ -10,7 +10,7 @@ import java.util.Date;
 
 @Builder(toBuilder = true)
 public record SupportForm(@NonNull String name,
-                          @NonNull @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.mm.YY") Date supportDate,
+                          @NonNull @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yyyy") Date supportDate,
                           @NonNull String period,
                           @Pattern(regexp = "^\\d+$") String size,
                           String target) {

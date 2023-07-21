@@ -14,7 +14,7 @@ import java.util.Date;
 
 @Builder(toBuilder = true)
 public record Organization(@Id Integer id,
-                           @NonNull @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.mm.YY") Date registerDate,
+                           @NonNull @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yyyy") Date registerDate,
                            @NonNull String name,
                            @NonNull String address,
                            @NonNull @Size(min = 13, max = 15) String ogrn,

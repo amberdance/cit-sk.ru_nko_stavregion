@@ -13,12 +13,14 @@ Content-Type: application/json
 
 {
   "name": "name",
+  "registerDate": "21.12.2023",
   "address": "address",
   "ogrn": "123456789121233",
   "inn": "111111111111",
   "okvd": "99.99",
   "violationInformation": "violation",
   "supportForm": {
+    "supportDate": "21.12.2023",
     "name": "name",
     "target": "target",
     "period": "period",

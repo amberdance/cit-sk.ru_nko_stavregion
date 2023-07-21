@@ -2,6 +2,7 @@ package ru.stavregion.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import ru.stavregion.exception.ModelNotFoundException;
 import ru.stavregion.model.Organization;
@@ -20,7 +21,7 @@ public class OrganizationServiceImpl implements OrganizationService {
 
     @Override
     public List<Organization> findAllOrganizations() {
-        return organizationRepository.findAll();
+        return organizationRepository.findAll(Sort.by("id").descending());
     }
 
     @Override

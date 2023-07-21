@@ -4,19 +4,21 @@ DROP TABLE IF EXISTS support_forms;
 CREATE TABLE organization
 (
     id                    SERIAL PRIMARY KEY,
-    name                  VARCHAR(256),
-    address               VARCHAR(256),
-    ogrn                  VARCHAR(16),
-    inn                   VARCHAR(16),
-    okvd                  VARCHAR(16),
+    register_date         DATE         NOT NULL,
+    name                  VARCHAR(256) NOT NULL,
+    address               VARCHAR(256) NOT NULL,
+    ogrn                  VARCHAR(16)  NOT NULL,
+    inn                   VARCHAR(16)  NOT NULL,
+    okvd                  VARCHAR(16)  NOT NULL,
     violation_information VARCHAR(1024)
 );
 
 CREATE TABLE support_form
 (
     organization INTEGER PRIMARY KEY REFERENCES organization (id),
-    name         VARCHAR(256),
-    size         VARCHAR(32),
-    period       VARCHAR(32),
-    target       VARCHAR(256)
+    support_date DATE         NOT NULL,
+    name         VARCHAR(256) NOT NULL,
+    size         VARCHAR(32)  NOT NULL,
+    target       VARCHAR(256) NOT NULL,
+    period       VARCHAR(32)
 );

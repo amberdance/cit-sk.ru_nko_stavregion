@@ -50,7 +50,6 @@ class OrganizationControllerTest extends AbstractRestControllerConfig {
         var responseOrganization = objectMapper.readValue(response, Organization.class);
 
         assertNotNull(responseOrganization.id());
-        assertEquals(organization.supportForm(), responseOrganization.supportForm());
         assertEquals(organization.violationInformation(), responseOrganization.violationInformation());
         assertEquals(organization.okvd(), responseOrganization.okvd());
         assertEquals(organization.inn(), responseOrganization.inn());

@@ -42,6 +42,7 @@ class OrganizationServiceImplTest {
 
         assertEquals(existingOrganization.id(), updatedOrganization.id());
         assertNotEquals(existingOrganization.supportForm(), updatedOrganization.supportForm());
+        assertNotEquals(existingOrganization.registerDate(), updatedOrganization.registerDate());
         assertNotEquals(existingOrganization.name(), updatedOrganization.name());
         assertNotEquals(existingOrganization.address(), updatedOrganization.address());
         assertNotEquals(existingOrganization.ogrn(), updatedOrganization.ogrn());

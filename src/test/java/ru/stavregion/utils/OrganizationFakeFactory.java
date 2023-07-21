@@ -5,6 +5,8 @@ import org.apache.commons.lang3.RandomStringUtils;
 import ru.stavregion.model.Organization;
 import ru.stavregion.model.SupportForm;
 
+import java.util.Date;
+
 public final class OrganizationFakeFactory {
 
     private OrganizationFakeFactory() {
@@ -15,6 +17,7 @@ public final class OrganizationFakeFactory {
         var supportForm = getSupportForm();
 
         return Organization.builder()
+                .registerDate(new Date())
                 .name(randomString)
                 .address(randomString)
                 .inn("123456789012")
@@ -25,12 +28,14 @@ public final class OrganizationFakeFactory {
                 .build();
     }
 
+
     public static Organization getOrganizationWithId(int id) {
         var random = getRandomString(16);
         var supportForm = getSupportForm();
 
         return Organization.builder()
                 .id(id)
+                .registerDate(new Date())
                 .name(random)
                 .address(random)
                 .inn("123456789012")
@@ -45,6 +50,7 @@ public final class OrganizationFakeFactory {
         var randomString = getRandomString(16);
 
         return SupportForm.builder()
+                .supportDate(new Date())
                 .name(randomString)
                 .period(randomString)
                 .size("123123123")

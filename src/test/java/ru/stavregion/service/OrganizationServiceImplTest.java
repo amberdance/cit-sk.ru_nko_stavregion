@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import ru.stavregion.exception.ModelNotFoundException;
-import ru.stavregion.model.Organization;
-import ru.stavregion.model.SupportForm;
+import ru.stavregion.utils.OrganizationFakeFactory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -19,58 +18,30 @@ class OrganizationServiceImplTest {
     @Autowired
     private OrganizationService organizationService;
 
-    private static Organization getFakeOrganization() {
-        var supportForm = SupportForm.builder()
-                .name("any")
-                .period("any")
-                .size("any")
-                .target("any")
-                .build();
-
-        return Organization.builder()
-                .name("any")
-                .address("any")
-                .inn("any")
-                .okvd("any")
-                .ogrn("any")
-                .supportForm(supportForm)
-                .violationInformation("any")
-                .build();
-    }
-
 
     @Test
     void getAllOrganizations() {
-        assertFalse(organizationService.getAllOrganizations().isEmpty());
+        assertFalse(organizationService.findAllOrganizations().isEmpty());
     }
 
     @Test
     void createOrganization() {
-        var sizeBefore = organizationService.getAllOrganizations().size();
-        organizationService.saveOrganization(getFakeOrganization());
+        var sizeBefore = organizationService.findAllOrganizations().size();
+        var fakeOrganization = OrganizationFakeFactory.getOrganization();
+        organizationService.saveOrganization(fakeOrganization);
 
-        var sizeAfter = organizationService.getAllOrganizations().size();
+        var sizeAfter = organizationService.findAllOrganizations().size();
         assertEquals(sizeBefore + 1, sizeAfter);
     }
 
     @Test
     void updateOrganization() throws ModelNotFoundException {
-        var existingOrganization = organizationService.getOrganization(1);
-        var organizationToSave = Organization.builder()
-                .id(existingOrganization.id())
-                .name("newname")
-                .address("newaddress")
-                .ogrn("new")
-                .inn("new")
-                .okvd("new")
-                .violationInformation("newinf")
-                .supportForm(existingOrganization.supportForm())
-                .build();
-
+        var existingOrganization = organizationService.findOrganization(1);
+        var organizationToSave = OrganizationFakeFactory.getOrganizationWithId(existingOrganization.id());
         var updatedOrganization = organizationService.saveOrganization(organizationToSave);
 
         assertEquals(existingOrganization.id(), updatedOrganization.id());
-        assertEquals(existingOrganization.supportForm(), updatedOrganization.supportForm());
+        assertNotEquals(existingOrganization.supportForm(), updatedOrganization.supportForm());
         assertNotEquals(existingOrganization.name(), updatedOrganization.name());
         assertNotEquals(existingOrganization.address(), updatedOrganization.address());
         assertNotEquals(existingOrganization.ogrn(), updatedOrganization.ogrn());
@@ -80,22 +51,22 @@ class OrganizationServiceImplTest {
 
     @Test
     void getOrganizationShouldThrowsExceptionIfModelDidNotExists() {
-        assertThrows(ModelNotFoundException.class, () -> organizationService.getOrganization(999111));
+        assertThrows(ModelNotFoundException.class, () -> organizationService.findOrganization(999111));
     }
 
     @Test
     void getOrganizationShouldReturnModelIfExists() throws ModelNotFoundException {
-        assertNotNull(organizationService.getOrganization(1));
+        assertNotNull(organizationService.findOrganization(1));
     }
 
     @Test
     void deleteOrganization() {
-        var organization = organizationService.saveOrganization(getFakeOrganization());
-        var sizeBefore = organizationService.getAllOrganizations().size();
+        var organization = organizationService.saveOrganization(OrganizationFakeFactory.getOrganization());
+        var sizeBefore = organizationService.findAllOrganizations().size();
 
         organizationService.deleteOrganization(organization.id());
 
-        var sizeAfter = organizationService.getAllOrganizations().size();
+        var sizeAfter = organizationService.findAllOrganizations().size();
         assertEquals(sizeBefore - 1, sizeAfter);
     }
 }

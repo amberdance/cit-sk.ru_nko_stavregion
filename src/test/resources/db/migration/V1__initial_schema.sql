@@ -15,8 +15,8 @@ CREATE TABLE organization
 CREATE TABLE support_form
 (
     organization INTEGER PRIMARY KEY REFERENCES organization (id),
-    name          VARCHAR(256),
-    size          VARCHAR(32),
-    period        VARCHAR(32),
-    target        VARCHAR(256)
+    name         VARCHAR(256),
+    size         VARCHAR(32),
+    period       VARCHAR(32),
+    target       VARCHAR(256)
 );

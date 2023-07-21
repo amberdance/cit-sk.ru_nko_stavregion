@@ -19,13 +19,18 @@ public class OrganizationServiceImpl implements OrganizationService {
 
 
     @Override
-    public List<Organization> getAllOrganizations() {
+    public List<Organization> findAllOrganizations() {
         return organizationRepository.findAll();
     }
 
     @Override
-    public Organization getOrganization(int id) throws ModelNotFoundException {
+    public Organization findOrganization(int id) throws ModelNotFoundException {
         return organizationRepository.findById(id).orElseThrow(ModelNotFoundException::new);
+    }
+
+    @Override
+    public Organization findAnyOrganization() throws ModelNotFoundException {
+        return organizationRepository.findAnyOrganization().orElseThrow(ModelNotFoundException::new);
     }
 
     @Override

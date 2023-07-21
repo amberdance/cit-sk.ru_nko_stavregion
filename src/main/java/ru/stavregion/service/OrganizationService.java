@@ -7,9 +7,11 @@ import java.util.List;
 
 public interface OrganizationService {
 
-    List<Organization> getAllOrganizations();
+    List<Organization> findAllOrganizations();
 
-    Organization getOrganization(int id) throws ModelNotFoundException;
+    Organization findOrganization(int id) throws ModelNotFoundException;
+
+    Organization findAnyOrganization() throws ModelNotFoundException;
 
     Organization saveOrganization(Organization organization);
 

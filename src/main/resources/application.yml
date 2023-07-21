@@ -1,0 +1,9 @@
+spring:
+  main:
+    banner-mode: off
+
+  profiles:
+    active: dev
+
+app:
+  api-prefix: /api/v1

@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5430/nko_db
+    username: postgres
+    password: postgres
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+  sql:
+    init:
+      platform: postgres
+      mode: always
+
+logging:
+  level:
+    org.springframework.jdbc.core: DEBUG
+
+server:
+  port: 9000

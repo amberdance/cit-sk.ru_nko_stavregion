@@ -1,0 +1,12 @@
+spring:
+  profiles.active: default
+  main.banner-mode: off
+
+  datasource:
+    url: jdbc:h2:mem:test_db;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;
+    username: sa
+    driver-class-name: org.h2.Driver
+
+logging:
+  level:
+    org.springframework.jdbc.core: DEBUG

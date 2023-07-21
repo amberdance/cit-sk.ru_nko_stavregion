@@ -1,7 +1,0 @@
-GET http://localhost:9000/api/v1/organizations
-Accept: application/json
-
-###
-
-DELETE http://localhost:9000/organizations/{{id}}
-Accept: application/json

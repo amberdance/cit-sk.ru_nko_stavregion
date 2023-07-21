@@ -11,47 +11,49 @@ public final class OrganizationFakeFactory {
     }
 
     public static Organization getOrganization() {
-        var random = getRandomString(16);
-        var supportForm = SupportForm.builder()
-                .name(random)
-                .period(random)
-                .size(random)
-                .target(random)
-                .build();
+        var randomString = getRandomString(16);
+        var supportForm = getSupportForm();
 
         return Organization.builder()
-                .name(random)
-                .address(random)
-                .inn(random)
-                .okvd(random)
-                .ogrn(random)
+                .name(randomString)
+                .address(randomString)
+                .inn("123456789012")
+                .okvd("12.12")
+                .ogrn("1234567890123")
                 .supportForm(supportForm)
-                .violationInformation(random)
+                .violationInformation(randomString)
                 .build();
     }
 
     public static Organization getOrganizationWithId(int id) {
         var random = getRandomString(16);
-        var supportForm = SupportForm.builder()
-                .name(random)
-                .period(random)
-                .size(random)
-                .target(random)
-                .build();
+        var supportForm = getSupportForm();
 
         return Organization.builder()
                 .id(id)
                 .name(random)
                 .address(random)
-                .inn(random)
-                .okvd(random)
-                .ogrn(random)
+                .inn("123456789012")
+                .okvd("12.12")
+                .ogrn("1234567890123")
                 .supportForm(supportForm)
                 .violationInformation(random)
+                .build();
+    }
+
+    public static SupportForm getSupportForm() {
+        var randomString = getRandomString(16);
+
+        return SupportForm.builder()
+                .name(randomString)
+                .period(randomString)
+                .size("123123123")
+                .target(randomString)
                 .build();
     }
 
     private static String getRandomString(int length) {
         return RandomStringUtils.randomAlphabetic(length);
     }
+
 }
